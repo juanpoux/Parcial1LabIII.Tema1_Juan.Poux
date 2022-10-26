@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./CSS/estilosAnuncios.css" />
+        <title>Administracion</title>
+    </head>
+    <body>
+        <header>
+            <div class="div_header">
+                <a href="./index.html">
+                    <img src="./images/logo.jpg" alt="logo" class="logo" />
+                </a>
+                <nav class="nav">
+                    <ul class="lista_enlaces">
+                        <li>
+                            <a href="./index.html" class="items_nav">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#" class="items_nav">Anuncios</a>
+                        </li>
+                        <li>
+                            <a href="#" class="items_nav">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="items_nav">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="div_titulo">
+                <h1 class="titulo">Administracion</h1>
+            </div>
+            <img src="images/7A9.jpg" alt="" class="img_banner" />
+        </header>
+
+        <main>
+            <div class="container_alta">
+                <h1>Llena el formulario de alta</h1>
+                <form class="formulario">
+                    <legend>Informacio del anuncio</legend>
+
+                    <div class="container_input">
+                        <label for="txtTitulo">Titulo:</label>
+                        <input
+                            type="text"
+                            name="txtTitulo"
+                            id="txtTitulo"
+                            placeholder="Titulo"
+                        />
+                        <small></small>
+                    </div>
+
+                    <fieldset>
+                        <legend>Transaccion</legend>
+                        <div class="container_transacciones">
+                            <label for="radioVenta">Venta</label>
+                            <input
+                                type="radio"
+                                name="transaccion"
+                                value="Venta"
+                                id="radioTransaccion"
+                                checked
+                            />
+                        </div>
+                        <div class="container_transacciones">
+                            <label for="radioAlquiler">Alquiler</label>
+                            <input
+                                type="radio"
+                                name="transaccion"
+                                value="Alquiler"
+                                id="radioTransaccion"
+                            />
+                        </div>
+                    </fieldset>
+
+                    <div class="container_input">
+                        <label for="txtDescripcion">Descripcion:</label>
+                        <input
+                            type="text"
+                            name="txtDescripcion"
+                            id="txtDescripcion"
+                            placeholder="Descripcion"
+                        />
+                        <small></small>
+                    </div>
+
+                    <div class="container_input">
+                        <label for="txtPrecio">Precio:</label>
+                        <input
+                            type="text"
+                            name="txtPrecio"
+                            id="txtPrecio"
+                            placeholder="Precio"
+                        />
+                        <small></small>
+                    </div>
+
+                    <div class="container_input">
+                        <label for="txtPuertas"
+                            ><img src="images/puertaico.ico" alt=""
+                        /></label>
+                        <input
+                            type="number"
+                            name="txtPuertas"
+                            id="txtPuertas"
+                            placeholder="Puertas"
+                        />
+                        <small></small>
+                    </div>
+
+                    <div class="container_input">
+                        <label for="txtKms"
+                            ><img src="images/kmico.ico" alt=""
+                        /></label>
+                        <input
+                            type="number"
+                            name="txtKms"
+                            id="txtKms"
+                            placeholder="Kilómetros"
+                        />
+                        <small></small>
+                    </div>
+
+                    <div class="container_input">
+                        <label for="txtPotencia"
+                            ><img src="images/potico.ico" alt=""
+                        /></label>
+                        <input
+                            type="number"
+                            name="txtPotencia"
+                            id="txtPotencia"
+                            placeholder="Potencia"
+                        />
+                        <small></small>
+                    </div>
+
+                    <input value="Agregar" type="submit" id="btnGuardar" />
+                </form>
+            </div>
+
+            <div class="spinner" id="spinner"></div>
+
+            <div class="container_botones">
+                <input
+                    class=""
+                    type="button"
+                    value="Modificar"
+                    id="btnModificar"
+                />
+                <input
+                    class="delete"
+                    type="button"
+                    value="Eliminar"
+                    id="btnEliminar"
+                />
+                <input
+                    class="cancel"
+                    type="button"
+                    value="Cancelar"
+                    id="btnCancelar"
+                />
+            </div>
+
+            <div class="container_tabla"></div>
+        </main>
+
+        <footer>
+            <div class="div_footer">
+                <nav class="nav_footer">
+                    <ul class="lista_enlaces_footer">
+                        <li>
+                            <a href="#" class="items_nav_footer">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#" class="items_nav_footer">Anuncios</a>
+                        </li>
+                        <li>
+                            <a href="#" class="items_nav_footer">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="items_nav_footer">Contacto</a>
+                        </li>
+                    </ul>
+                    <p class="derechos">Todos los derechoos reservados 2022 &copy;</p>
+                </nav>
+            </div>
+        </footer>
+
+        <script src="./JS/script_anuncios.js" type="module"></script>
+    </body>
+</html>

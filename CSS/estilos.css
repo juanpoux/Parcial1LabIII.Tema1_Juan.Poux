@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+}
+
+/* HEADER */
+
+body {
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+}
+
+.div_header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.564);
+}
+
+.logo {
+    width: 200px;
+    padding: 10px 30px;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+}
+
+.lista_enlaces {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+
+.items_nav {
+    display: inline-block;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    background: rgba(1, 0, 0, 0.5);
+}
+
+.items_nav:hover {
+    color: black;
+    background: rgba(130, 158, 89,0.4);
+}
+
+
+/* END HEADER */
+
+/* CARDS */
+
+.div_tarjetas{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    grid-template-columns: 60%;
+}
+
+.card {
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    display: block;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    background: rgb(126, 132, 76);
+}
+
+h1 {
+    color: black;
+    font-size: 50px;
+}
+
+h2 {
+    color: rgb(47, 79, 0);
+    font-size: 40px;
+}
+
+h3 {
+    color: black;
+    font-size: 30px;
+}
+
+h4 {
+    color: black;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.div_contenidoTarjeta {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* END CARDS */
+
+
+
+/* FOOTER */
+/*
+footer {
+    margin-bottom: 0;
+}
+
+.div_footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.nav_footer {
+    display: flex;
+    width: 100%;
+}
+
+.lista_enlaces_footer {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.items_nav_footer {
+    display: inline-block;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.items_nav_footer:hover {
+    background: rgba(130, 158, 89,0.4);
+}
+
+.derechos {
+    color: white;
+}
+*/
+/* END FOOTER */
